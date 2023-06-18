@@ -76,8 +76,8 @@ rad = st.sidebar.radio("Navigation",["Home","Caption Generator"])
 
 
 if rad=="Home":
-    st.title("Image Caption Generator")
-    st.subheader("By Hardik Pahwa")
+    st.title("CNN Caption Generator")
+    st.subheader("By Anuraj Bhaskar")
     st.markdown("""Upload an Image in the Caption Generator page to generate Caption""")
     
     # st.image("sample.jpg")
