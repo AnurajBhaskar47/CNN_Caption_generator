@@ -6,32 +6,37 @@ Built a model using deep learning techniques that can generate meaningful textua
 ## Overview
 Image caption generation involves two main components:
 
-Image Feature Extraction: Convolutional Neural Networks (CNNs) are used to extract high-level features from images. A pre-trained CNN model, typically trained on large image datasets like ImageNet, is used for this purpose. These features provide a meaningful representation of the image content.
+<b>Image Feature Extraction:</b>
+Convolutional Neural Networks (CNNs) are used to extract high-level features from images. A pre-trained CNN model, typically trained on large image datasets like ImageNet, is used for this purpose. These features provide a meaningful representation of the image content.
 
-Text Generation: Recurrent Neural Networks (RNNs) are employed to generate captions based on the extracted image features. The RNN learns to generate sequential text descriptions that are coherent and contextually relevant to the input image. 
+<b>Text Generation:</b>
+Recurrent Neural Networks (RNNs) are employed to generate captions based on the extracted image features. The RNN learns to generate sequential text descriptions that are coherent and contextually relevant to the input image. 
 
+## Setup
 
 1. Clone this repository:
 
-	`` shell
-
+	``
 	git clone https://github.com/your-username/image-caption-generator.git
-	cd image-caption-generator
+	``
+	<br>
+ 	``
+ 	cd image-caption-generator
 	``
 
-2. Install the required dependencies:
+3. Install the required dependencies:
 
 	`` 
 	pip install -r requirements.txt ``
 
 
-3. Download the pre-trained CNN model (e.g., VGG16) weights and place them in the models directory.
+4. Download the pre-trained CNN model (e.g., VGG16) weights and place them in the models directory.
 
 
-4. Prepare your dataset. This repository assumes a specific dataset structure. Make sure to organize your images and captions accordingly.
+5. Prepare your dataset. This repository assumes a specific dataset structure. Make sure to organize your images and captions accordingly.
 
 
-5. Customize the configuration settings in config.py to match your dataset and training preferences.
+6. Customize the configuration settings in config.py to match your dataset and training preferences.
 
 
 ## Model Architecture
@@ -50,7 +55,7 @@ The model architecture for this image caption generator typically consists of:
 
 Here's an example of how to use this image caption generator:
 
-	``
+	
 	from image_caption_generator import ImageCaptionGenerator
 
 	# Load the trained model
@@ -59,7 +64,7 @@ Here's an example of how to use this image caption generator:
 	# Generate a caption for a new image
 	caption = generator.generate_caption('path/to/your/image.jpg')
 	print(caption)
-	``
+	
 
 
 ## License
@@ -68,6 +73,7 @@ License
 This project is licensed under the MIT License.
 
 Feel free to contribute, open issues, or provide feedback. Happy image caption generating!
+
 
 
 
