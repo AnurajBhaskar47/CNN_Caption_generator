@@ -1,0 +1,4 @@
+tensorflow
+numpy
+opencv-python
+Pillow==9.4.0
